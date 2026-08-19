@@ -1,4 +1,18 @@
-button {
+.Ein {
   display: flex;
   justify-content: center;
+  gap: 20px;
+  border-color: rgb(6, 6, 6);
+}
+
+button {
+  padding: 2rem;
+  border-color: aquamarine;
+  background-color: chartreuse;
+}
+
+#anzeige {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
 }

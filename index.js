@@ -1,25 +1,19 @@
 var count = 0;
 function Increasedcount() {
-  count = count + 1;
+  count = count - 100;
   countAnzeigen();
 }
-function deIncreasedcoun() {
-  count = count - 1;
+function deIncreasedcount() {
+  count = count + 100;
   countAnzeigen();
 }
 function countAnzeigen() {
-  var element = document.getElementById("text");
+  var element = document.getElementById("anzeige");
   element.innerHTML = count;
 
-  if (count < -1) {
-    alert("Der Wert ist kleiner als -1");
-  } else if (count === -1) {
-    alert("Der Wert ist gleich -1");
-  } else if (count > -1 && count < 3) {
-    alert("Der Wert zwichen  -1 und 3");
-  } else if (count === 3) {
-    alert("Der Wert ist gleich 3");
-  } else if (count > 3) {
-    alert("Der Wert ist groser als 3");
+  if (count === -100) {
+    alert("Sie können nur maximal 100 dollar ins minus");
+  } else if (count === 1000) {
+    alert("Sie können  maximal 1000 dollar einzahlen");
   }
 }
