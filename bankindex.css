@@ -14,5 +14,5 @@ button {
 #anzeige {
   display: flex;
   justify-content: center;
-  background-color: aliceblue;
+  align-items: center;
 }
