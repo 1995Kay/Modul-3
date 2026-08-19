@@ -18,10 +18,15 @@
         } else element.classList.add("red");
         red = !red;
       }
+
+      function toggelRedTwo() {
+        var element = document.getElementById("red");
+        element.classList.toggle("red");
+      }
     </script>
   </head>
 
   <body>
-    <button id="red" onclick="toggelRed()">rot</button>
+    <button id="red" onclick="toggelRedTwo()">rot</button>
   </body>
 </html>

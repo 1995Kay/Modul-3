@@ -12,3 +12,33 @@
     <button onclick="deIncreasedcoun()">-</button>
   </body>
 </html>
+
+
+
+
+  // style>
+      .red {
+        background-color: rgb(255, 0, 0);
+      }
+    </style>
+    <script>
+      var red = false;
+      function toggelRed() {
+        var element = document.getElementById("red");
+        if (red) {
+          element.classList.remove("red");
+        } else element.classList.add("red");
+        red = !red;
+      }
+
+      function toggelRedTwo() {
+        var element = document.getElementById("red");
+        element.classList.toggle("red");
+      }
+    </script>
+  </head>
+
+  <body>
+    <button id="red" onclick="toggelRedTwo()">rot</button>
+  </body>
+</html>
