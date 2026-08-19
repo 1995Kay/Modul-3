@@ -16,3 +16,10 @@ button {
   justify-content: center;
   align-items: center;
 }
+.rot {
+  color: red;
+}
+
+div {
+  color: rgb(0, 0, 0);
+}
