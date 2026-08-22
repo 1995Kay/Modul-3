@@ -12,27 +12,60 @@
       <div class="main-container">
         <h1>Preisrechner</h1>
         <div class="main-button">
-          <button class="text">Currywurst<span>4,50 €</span></button>
-          <button class="text">Mantaplatte<span>7,50 €</span></button>
-          <button class="text">Pommes<span>3,00 €</span></button>
-          <button class="text">Süßkartoffel<span>5,90 €</span></button>
+          <button class="text" onclick="addItemToOrder('Currywurst', 4.5)">
+            Currywurst<span>4,50 €</span>
+          </button>
+          <button class="text" onclick="addItemToOrder('Mantaplatte', 7.5)">
+            Mantaplatte<span>7,50 €</span>
+          </button>
+          <button class="text" onclick="addItemToOrder('Pommes', 3.0)">
+            Pommes<span>3,00 €</span>
+          </button>
+          <button class="text" onclick="addItemToOrder('Süßkartoffel', 5.9)">
+            Süßkartoffel<span>5,90 €</span>
+          </button>
 
-          <button class="text">Frikadelle<span>3,50 €</span></button>
-          <button class="text">Schnitzel<span>8,90 €</span></button>
-          <button class="text">Crossies<span>6,50 €</span></button>
-          <button class="text">Veggie Wurst<span>5,50 €</span></button>
+          <button class="text" onclick="addItemToOrder('Frikadelle', 3.5)">
+            Frikadelle<span>3,50 €</span>
+          </button>
+          <button class="text" onclick="addItemToOrder('Schnitzel', 8.9)">
+            Schnitzel<span>8,90 €</span>
+          </button>
+          <button class="text" onclick="addItemToOrder('Crossies', 6.5)">
+            Crossies<span>6,50 €</span>
+          </button>
+          <button class="text" onclick="addItemToOrder('Veggie Wurst', 5.5)">
+            Veggie Wurst<span>5,50 €</span>
+          </button>
 
-          <button class="text">Krautsalat<span>3,50 €</span></button>
-          <button class="text">Kartoffelsalat<span>3,90 €</span></button>
-          <button class="text">Cola / Zero<span>2,50 €</span></button>
-          <button class="text">Limo<span>2,50 €</span></button>
+          <button class="text" onclick="addItemToOrder('Krautsalat', 3.5)">
+            Krautsalat<span>3,50 €</span>
+          </button>
+          <button class="text" onclick="addItemToOrder('Kartoffelsalat', 3.9)">
+            Kartoffelsalat<span>3,90 €</span>
+          </button>
+          <button class="text" onclick="addItemToOrder('Cola / Zero', 2.5)">
+            Cola / Zero<span>2,50 €</span>
+          </button>
+          <button class="text" onclick="addItemToOrder('Limo', 2.5)">
+            Limo<span>2,50 €</span>
+          </button>
 
-          <button class="text">Wasser<span>2,00 €</span></button>
-          <button class="text">Apfelschorle<span>2,50 €</span></button>
-          <button class="text">Altbier<span>3,00 €</span></button>
-          <button class="text">Pils<span>3,00 €</span></button>
+          <button class="text" onclick="addItemToOrder('Wasser', 2.0)">
+            Wasser<span>2,00 €</span>
+          </button>
+          <button class="text" onclick="addItemToOrder('Apfelschorle', 2.5)">
+            Apfelschorle<span>2,50 €</span>
+          </button>
+          <button class="text" onclick="addItemToOrder('Altbier', 3.0)">
+            Altbier<span>3,00 €</span>
+          </button>
+          <button class="text" onclick="addItemToOrder('Pils', 3.0)">
+            Pils<span>3,00 €</span>
+          </button>
         </div>
         <hr />
+        <div class="gesamt-total">Gesamt<span id="total-value" 0€> </span></div>
         <button class="rest end">Rest</button>
         <div class="order-buttons">
           <button class="vorort end">Vor Ort</button>
@@ -41,7 +74,9 @@
       </div>
       <div class="cart-container">
         <h2>Warenkorb</h2>
+        <div class="orders-items" id="orders-item"></div>
       </div>
+      <script></script>
     </main>
   </body>
 </html>
