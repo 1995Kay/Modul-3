@@ -90,3 +90,8 @@ hr {
   display: flex;
   justify-content: right;
 }
+
+.cart-item-row {
+  display: flex;
+  justify-content: right;
+}
