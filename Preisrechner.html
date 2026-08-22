@@ -66,10 +66,14 @@
         </div>
         <hr />
         <div class="gesamt-total">Gesamt<span id="total-value" 0€> </span></div>
-        <button class="rest end">Rest</button>
+        <button class="rest end" id="reset" onclick="reset()">
+          Zurückzestzten
+        </button>
         <div class="order-buttons">
-          <button class="vorort end">Vor Ort</button>
-          <button class="lieferung end">Lieferung</button>
+          <button class="vorort end" id="inhouse" onclick="checkoutinhouse()">Vor Ort</button>
+          <button class="lieferung end" id="delivery" onclick="checkoutdelvery()">Lieferung</button>
+            
+          </button>
         </div>
       </div>
       <div class="cart-container">
